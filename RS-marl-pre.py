@@ -1,5 +1,5 @@
 """
-RS-SQL: 基于角色切换随机–Stackelberg 的多智能体强化学习算法
+RSS-MARL: 基于角色切换随机–Stackelberg 的多智能体强化学习算法
 
 - 状态 s: 聚合情境（攻击图节点）
 - 阶段 1 (真实博弈): 攻击者为 Leader, 防御者为 Follower
@@ -434,3 +434,4 @@ if __name__ == "__main__":
     print("学习到的局部 Stackelberg 策略 (state -> (a_R^*(s), d_R^*(s))):")
     for s, (a_star, d_star) in policies.items():
         print(f"  state {s}: a*={a_star}, d*={d_star}")
+
